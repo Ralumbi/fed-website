@@ -1,12 +1,14 @@
 <?php
 session_start();
 
+
 const ROOT_DIR = __DIR__;
 const DS = DIRECTORY_SEPARATOR;
 
 include '../App/Config/Config.php';
 
 if (DEV === true) {
+    ini_set('error_reporting', E_ALL);
     $starttime = microtime(true); // Top of page
 }
 
