@@ -13,7 +13,7 @@ class Database
         }
     }
     
-    public function query($sql)
+    public function query($sql): void
     {
         $this->conn->query($sql);
         if (!$this->conn->query($sql)) {
