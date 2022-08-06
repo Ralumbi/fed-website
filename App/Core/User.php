@@ -12,17 +12,13 @@ class User extends Database
 
     public function register()
     {
-        $message = '';
+        $message = [];
 
-        if (!empty($_POST['register']) && $_POST['email'] !== '') {
-            $username = htmlentities($_POST['username']);
-
-            if (!empty($username)) {
-                $message = 'test';
-            }
+        if (isset($_POST['register'])) {
+            
         }
 
-        return $message;
+        
     }
 
 }

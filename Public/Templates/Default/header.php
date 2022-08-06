@@ -23,3 +23,26 @@
 <body class="home">
     	
 
+<div class="navbar navbar-inverse navbar-fixed-top headroom">
+  <div class="container">
+    <div class="navbar-header" style="height: 65px; margin-top: -10px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="/"><img src="<?= ASSETS ?>/images/FedLogo.png" style="height: 65px; margin-top: -10px;" alt=""> The Federation</a></div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Games <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="albion">Albion Online</a></li>
+            <li><a href="newworld">New World</a></li>
+			<li><a href="other">Other</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+		<li><a class="btn" href="/login">SIGN IN</a></li>
+        <li><a class="btn" href="/register">SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

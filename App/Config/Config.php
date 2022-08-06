@@ -27,6 +27,7 @@ const AUTOLOADDIR = [
 
 // Here you can add the helpers you want to load from the 'App/Helpers/' directory
 const LOADHELPER = [
+    'Functions',
     'Routes', // do not remove unless you know what you're doing
 ];
 
