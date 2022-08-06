@@ -26,7 +26,7 @@ class Session
     public static function addMessage($type, $message)
     {
         $sessionName = 'alert-' . $type;
-        self::set($sessionName, $msg);
+        self::set($sessionName, $message);
     }
 
     public static function displayMessage()
