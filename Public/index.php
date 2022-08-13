@@ -8,7 +8,9 @@ const DS = DIRECTORY_SEPARATOR;
 include '../App/Config/Config.php';
 
 if (DEV === true) {
-    ini_set('error_reporting', E_ALL);
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+    
     $starttime = microtime(true); // Top of page
 }
 

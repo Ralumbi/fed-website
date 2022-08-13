@@ -2,6 +2,9 @@
 
 class Session 
 {
+
+    // TODO: not sure what I did wrong, displaymessage not working properly, might rework entire sessions.
+
     public static function set($name, $value): string
     {
         return $_SESSION[$name] = $value;
@@ -21,6 +24,14 @@ class Session
     {
         if (self::exists($name))
             unset($_SESSION[$name]);
+    }
+
+    public static function display($name)
+    {
+        if (self::exists($name)) {
+            echo $_SESSION[$name];
+            unset($_SESSION[$name]);
+        }
     }
 
     public static function addMessage($type, $message): void

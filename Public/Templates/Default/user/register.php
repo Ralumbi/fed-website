@@ -34,12 +34,8 @@
 
 							<form method="POST" action="">
 								<div class="top-margin">
-									<label>Username</label>
+									<label>Username <span class="text-danger">*</span></label>
 									<input type="text" name="username" value="<?php if(!empty($_POST["username"])) { echo $_POST["username"]; } ?>" class="form-control">
-								</div>
-								<div class="top-margin">
-									<label>First Name</label>
-									<input type="text" name="firstname" value="<?php if(!empty($_POST["firstname"])) { echo $_POST["firstname"]; } ?>" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Email Address <span class="text-danger">*</span></label>
@@ -49,11 +45,11 @@
 								<div class="row top-margin">
 									<div class="col-sm-6">
 										<label>Password <span class="text-danger">*</span></label>
-										<input type="password" class="form-control">
+										<input type="password" name="password" class="form-control">
 									</div>
 									<div class="col-sm-6">
 										<label>Confirm Password <span class="text-danger">*</span></label>
-										<input type="password" class="form-control">
+										<input type="password" name="passwordCheck" class="form-control">
 									</div>
 								</div>
 
